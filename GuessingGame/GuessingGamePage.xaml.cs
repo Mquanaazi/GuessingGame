@@ -23,7 +23,7 @@ public partial class GuessingGamePage : ContentPage
 		if (_numberToGuess == numberGuessed)
 		{
 			FeedbackLabel.Text = "Well Done! Correct Guess";
-			FeedbackLabel.TextColor = Color.FromRgba(0, 255, 0, 255);
+			FeedbackLabel.TextColor = Color.FromRgba(0, 128, 0, 255);
 
         }
 		else if (numberGuessed > _numberToGuess)
@@ -34,6 +34,6 @@ public partial class GuessingGamePage : ContentPage
 		else
 
 			FeedbackLabel.Text = "Too low";
-			FeedbackLabel.TextColor = Color.FromRgba(188, 0, 0, 255);
+			FeedbackLabel.TextColor = Color.FromRgba(255, 0, 0, 255);
     }
 }
