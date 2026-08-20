@@ -9,5 +9,6 @@
             VerticalOptions="Center" 
             HorizontalOptions="Center" />
         <Button Text="Go Guessing Game" Clicked= "Button_Clicked" />
+        <Button Text="Slider Demo" Clicked= "Slider_ValueChanged"/>
     </VerticalStackLayout>
 </ContentPage>

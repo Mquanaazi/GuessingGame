@@ -11,4 +11,9 @@ public partial class LandingPage : ContentPage
     {
 	await Navigation.PushAsync(new GuessingGamePage(1, 10));
     }
+
+    private async void Slider_ValueChanged(object sender, EventArgs e)
+    {
+        await Navigation.PushAsync(new SliderDemoPage());
+    }
 }
