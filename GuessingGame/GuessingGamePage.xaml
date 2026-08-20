@@ -2,14 +2,23 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="GuessingGame.GuessingGamePage"
-             Title="GuessingGamePage">
+             Title="Guessing Game!">
     <!--every control in this layout will have the same padding and will be vertically alligned -->
     <VerticalStackLayout Padding="8,8,8,8" Spacing="40">
         <Image Source="spike.png" HeightRequest="160" Margin=" 8,8,8,8" />
         <Label x:Name="FeedbackLabel" FontSize="Large" FontAttributes="Bold" HorizontalTextAlignment="Center" Text="Guess a number from 1 to 100"></Label>
-        <Entry x:Name="GuessEntry" Placeholder="Guess the number" Keyboard="Numeric"/>
-        <Button x:Name="GuessButton" Text="Guess " Clicked= "GuessButton_Clicked">
+        
+        <Border Padding="8">
             
-        </Button>
+            <Border.StrokeShape>
+            <RoundRectangle CornerRadius="20" />
+        </Border.StrokeShape>
+            <Entry x:Name="GuessEntry" Placeholder="Guess the number" Keyboard="Numeric"/>
+             </Border>
+
+            <Button x:Name="GuessButton" Text="Guess " Clicked= "GuessButton_Clicked">
+
+            </Button>
+
     </VerticalStackLayout>
 </ContentPage>

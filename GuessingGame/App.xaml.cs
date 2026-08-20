@@ -11,7 +11,7 @@ namespace GuessingGame
 
         protected override Window CreateWindow(IActivationState? activationState)
         {
-            return new Window(new GuessingGamePage(0,100));
+            return new Window(new NavigationPage(new LandingPage())) ;
         }
     }
 }
