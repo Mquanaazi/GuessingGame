@@ -22,7 +22,7 @@ public partial class GuessingGamePage : ContentPage
 		int numberGuessed = int.Parse(GuessEntry.Text);
 		if (_numberToGuess == numberGuessed)
 		{
-			FeedbackLabel.Text = "Well Done! Correct Guess";
+			FeedbackLabel.Text = "Well Done Olwe2! Correct Guess";
 			FeedbackLabel.TextColor = Color.FromRgba(0, 128, 0, 128);
 
 		}
